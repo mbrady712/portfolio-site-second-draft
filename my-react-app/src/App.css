@@ -1,0 +1,681 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: -webkit-linear-gradient(top left, #165baa 0%, #53e3a6 100%);
+}
+
+/*HOME*/
+.home {
+  height: 100vh;
+}
+
+.navitem {
+  border-radius: 5%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5vw;
+}
+
+.navitem:hover {
+  background-color: #53e3a752;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.portrait {
+  width: 25vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  width: 80%;
+  margin-left: 10% !important;
+  margin-right: 10% !important;
+  color: white !important;
+}
+
+/*PROJECTS*/
+#projects {
+  height: 100vh;
+}
+
+.proj {
+  margin-bottom: 3%;
+}
+
+.caritem {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4vw !important;
+}
+
+.caption {
+  background-color: rgba(22, 91, 170, 0.5);
+  border-radius: 5%;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+.caption:hover {
+  background-color: rgba(83, 227, 166, 0.5);
+}
+
+/*ABOUT*/
+#about {
+  height: 100vh;
+}
+
+.pc {
+  background-color: rgba(255, 255, 255, 0.253);
+}
+
+.about {
+  font-size: 2vw;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*CONTACT*/
+.contact {
+  background-color: rgba(255, 255, 255, 0.253);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+.input {
+  font-size: 2vw !important;
+}
+
+.submit {
+  margin-top: 5%;
+  margin-left: 35%;
+  width: 30%;
+  font-size: 1.25vw !important;
+  background-color: #165baa !important;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+.submit:hover {
+  background-color: #6590c2 !important;
+}
+
+/*FOOTER*/
+.footer {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.5vw;
+}
+
+.icon {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.icon:hover {
+  -webkit-transform: scale(3);
+          transform: scale(3);
+}
+
+/*ANIMATIONS*/
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.orb, .orb2, .orb3, .orb4, .orb5, .orb6, .orb7, .orb8, .orb9, .orb10 {
+  background: radial-gradient(circle at 8vw 8vw, #53e3a6, #000);
+  width: 10vw;
+  border-radius: 50%;
+  height: 10vw;
+  -webkit-animation-name: orb;
+          animation-name: orb;
+  -webkit-animation-duration: 40s;
+          animation-duration: 40s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  position: relative;
+  margin-top: -10vw;
+  -webkit-animation-delay: 6535ms;
+          animation-delay: 6535ms;
+  z-index: -1;
+  opacity: 0;
+}
+
+.orb2 {
+  -webkit-animation-delay: 3330ms;
+          animation-delay: 3330ms;
+}
+
+.orb3 {
+  -webkit-animation-delay: 12575ms;
+          animation-delay: 12575ms;
+}
+
+.orb4 {
+  -webkit-animation-delay: 15360ms;
+          animation-delay: 15360ms;
+}
+
+.orb5 {
+  -webkit-animation-delay: 631ms;
+          animation-delay: 631ms;
+}
+
+.orb6 {
+  -webkit-animation-delay: 1027ms;
+          animation-delay: 1027ms;
+}
+
+.orb7 {
+  -webkit-animation-delay: 13137ms;
+          animation-delay: 13137ms;
+}
+
+.orb8 {
+  -webkit-animation-delay: 1449ms;
+          animation-delay: 1449ms;
+}
+
+.orb9 {
+  -webkit-animation-delay: 382ms;
+          animation-delay: 382ms;
+}
+
+.orb10 {
+  -webkit-animation-delay: 24499ms;
+          animation-delay: 24499ms;
+}
+
+@-webkit-keyframes orb {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    -webkit-transform: translateY(-800vh);
+            transform: translateY(-800vh);
+  }
+}
+
+@keyframes orb {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    -webkit-transform: translateY(-800vh);
+            transform: translateY(-800vh);
+  }
+}
+
+/*RESPONSIVE STYLES*/
+/*
+Aspect ratio < 1 (Taller than it is wide):
+Group 1: .40-.50:
+Iphone XR
+Iphone 12 Pro
+Pixel 5
+Galaxy S8
+Galaxy S20 Ultra
+Galaxy Fold
+Galaxy A51/71
+Group 2:  .50-.60:
+Iphone SE
+Group 3: .60-.70: 
+Ipad Air
+Surface Pro
+Group 4: .70-.80:
+Ipad Mini
+Surface Duo
+
+Aspect ratio > 1 (Wider than it is tall):
+Group 1: 1.25-1.43: 
+Ipad Mini
+Surface Duo
+Group 2: 1.43-1.67: 
+Ipad Air
+Surface Pro
+Nest Hub Max
+Group 3: 1.67-2: 
+Iphone SE
+Nest Hub
+Group 4: 2-2.5:
+Iphone XR
+Iphone 12 Pro
+Pixel 5
+Galaxy S8
+Galaxy S20 Ultra
+Galaxy Fold
+Galaxy A51/71
+
+*/
+/*AR < 1 Group 1*/
+@media only screen and (min-aspect-ratio: 4 / 10) and (max-aspect-ratio: 5 / 10) {
+  h1 {
+    font-size: 10vw !important;
+  }
+  .navitem {
+    font-size: 4vw;
+  }
+  .navitem:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .portrait {
+    width: 45vw !important;
+  }
+  .home {
+    height: 45vh !important;
+  }
+  #projects {
+    height: 45vh !important;
+  }
+  #about {
+    height: auto !important;
+  }
+  .about {
+    font-size: 5vw !important;
+  }
+  .contact {
+    font-size: 5vw;
+  }
+  .input {
+    font-size: 5vw !important;
+  }
+  .submit {
+    font-size: 5vw !important;
+  }
+  .footer {
+    font-size: 4vw !important;
+  }
+  .orb, .orb2, .orb3, .orb4, .orb5, .orb6, .orb7, .orb8, .orb9, .orb10 {
+    -webkit-animation-duration: 100s;
+            animation-duration: 100s;
+  }
+}
+
+/*AR < 1 Group 2*/
+@media only screen and (min-aspect-ratio: 5 / 10) and (max-aspect-ratio: 6 / 10) {
+  .navitem {
+    font-size: 4vw;
+  }
+  .navitem:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .portrait {
+    width: 30vw !important;
+  }
+  h1 {
+    font-size: 7vw !important;
+  }
+  .home {
+    height: 40vh !important;
+  }
+  #projects {
+    height: 50vh !important;
+  }
+  .proj {
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+  #about {
+    height: auto !important;
+  }
+  .about {
+    font-size: 5vw !important;
+  }
+  .contact {
+    font-size: 5vw;
+  }
+  .input {
+    font-size: 5vw !important;
+  }
+  .submit {
+    font-size: 5vw !important;
+  }
+  .footer {
+    font-size: 4vw !important;
+  }
+  .orb, .orb2, .orb3, .orb4, .orb5, .orb6, .orb7, .orb8, .orb9, .orb10 {
+    -webkit-animation-duration: 100s;
+            animation-duration: 100s;
+  }
+}
+
+/*AR < 1 Group 3*/
+@media only screen and (min-aspect-ratio: 6 / 10) and (max-aspect-ratio: 7 / 10) {
+  .navitem {
+    font-size: 3vw;
+  }
+  .navitem:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .portrait {
+    width: 40vw !important;
+  }
+  .home {
+    height: 50vh !important;
+  }
+  #projects {
+    height: 50vh !important;
+  }
+  #about {
+    height: 100vh !important;
+  }
+  .about {
+    font-size: 4vw !important;
+  }
+  .contact {
+    font-size: 5vw;
+  }
+  #contact {
+    height: 80vh;
+  }
+  .input {
+    font-size: 4vw !important;
+  }
+  .submit {
+    font-size: 4vw !important;
+  }
+  .footer {
+    font-size: 3vw;
+  }
+  .icon {
+    -webkit-transition: .5s;
+    transition: .5s;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  .icon:hover {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  .orb, .orb2, .orb3, .orb4, .orb5, .orb6, .orb7, .orb8, .orb9, .orb10 {
+    -webkit-animation-duration: 70s;
+            animation-duration: 70s;
+  }
+}
+
+/*AR < 1 Group 4*/
+@media only screen and (min-aspect-ratio: 7 / 10) and (max-aspect-ratio: 8 / 10) {
+  .navitem {
+    font-size: 3vw;
+  }
+  .navitem:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .portrait {
+    width: 35vw !important;
+  }
+  .home {
+    height: 50vh !important;
+  }
+  h1 {
+    font-size: 7vw !important;
+  }
+  #projects {
+    height: 50vh !important;
+  }
+  #about {
+    height: 100vh !important;
+  }
+  .about {
+    font-size: 4vw !important;
+  }
+  .contact {
+    font-size: 4vw;
+  }
+  #contact {
+    height: 80vh;
+  }
+  .input {
+    font-size: 4vw !important;
+  }
+  .submit {
+    font-size: 4vw !important;
+  }
+  .footer {
+    font-size: 3vw;
+  }
+  .icon {
+    -webkit-transition: .5s;
+    transition: .5s;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  .icon:hover {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  .orb, .orb2, .orb3, .orb4, .orb5, .orb6, .orb7, .orb8, .orb9, .orb10 {
+    -webkit-animation-duration: 70s;
+            animation-duration: 70s;
+  }
+}
+
+/*AR > 1 Group 1*/
+@media only screen and (min-aspect-ratio: 5 / 4) and (max-aspect-ratio: 143 / 100) {
+  .navitem:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .about {
+    font-size: 2.5vw;
+  }
+  .contact {
+    font-size: 3vw;
+  }
+  .input {
+    font-size: 3vw !important;
+  }
+  .submit {
+    font-size: 3vw !important;
+  }
+  .footer {
+    font-size: 2.5vw;
+  }
+}
+
+/*AR > 1 Group 2*/
+@media only screen and (min-aspect-ratio: 143 / 100) and (max-aspect-ratio: 167 / 100) {
+  .navitem:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .about {
+    font-size: 2.5vw;
+  }
+  .contact {
+    font-size: 3vw;
+  }
+  .input {
+    font-size: 3vw !important;
+  }
+  .submit {
+    font-size: 3vw !important;
+  }
+  .footer {
+    font-size: 2vw;
+  }
+}
+
+/*AR > 1 Group 3 Iphone SE only*/
+@media only screen and (min-aspect-ratio: 177 / 100) and (max-aspect-ratio: 2 / 1) {
+  .orb, .orb2, .orb3, .orb4, .orb5, .orb6, .orb7, .orb8, .orb9, .orb10 {
+    -webkit-animation-duration: 70s;
+            animation-duration: 70s;
+  }
+  .navitem {
+    font-size: 3vw;
+  }
+  .navitem:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .portrait {
+    width: 20vw !important;
+  }
+  h1 {
+    font-size: 5vw !important;
+  }
+  .home {
+    height: 100vh !important;
+  }
+  #projects {
+    height: 125vh !important;
+  }
+  #about {
+    height: 200vh !important;
+  }
+  .about {
+    font-size: 3vw !important;
+  }
+  .contact {
+    font-size: 3vw;
+  }
+  #contact {
+    height: 150vh;
+  }
+  .input {
+    font-size: 3vw !important;
+  }
+  .submit {
+    font-size: 3vw !important;
+  }
+  .footer {
+    font-size: 2vw;
+  }
+  .icon {
+    -webkit-transition: .5s;
+    transition: .5s;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  .icon:hover {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+}
+
+/*AR > 1 Group 4 Galaxy S8 only */
+@media only screen and (min-aspect-ratio: 2 / 1) and (max-aspect-ratio: 209 / 100) {
+  .navitem {
+    font-size: 2.5vw;
+  }
+  .navitem:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .portrait {
+    width: 20vw !important;
+  }
+  h1 {
+    font-size: 4vw !important;
+  }
+  .home {
+    height: 100vh !important;
+  }
+  #projects {
+    height: 150vh !important;
+  }
+  #about {
+    height: 200vh !important;
+  }
+  .about {
+    font-size: 3vw !important;
+  }
+  .contact {
+    font-size: 2vw;
+  }
+  #contact {
+    height: 150vh;
+  }
+  .input {
+    font-size: 2vw !important;
+  }
+  .submit {
+    font-size: 2vw !important;
+  }
+  .footer {
+    font-size: 2vw;
+  }
+  .icon {
+    -webkit-transition: .5s;
+    transition: .5s;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  .icon:hover {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  .orb, .orb2, .orb3, .orb4, .orb5, .orb6, .orb7, .orb8, .orb9, .orb10 {
+    -webkit-animation-duration: 70s;
+            animation-duration: 70s;
+  }
+}
+
+/*AR > 1 Group 4 all others*/
+@media only screen and (min-aspect-ratio: 215 / 100) and (max-aspect-ratio: 5 / 2) {
+  .navitem {
+    font-size: 2.5vw;
+  }
+  .navitem:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .portrait {
+    width: 20vw !important;
+  }
+  h1 {
+    font-size: 4vw !important;
+  }
+  .home {
+    height: 100vh !important;
+  }
+  #projects {
+    height: 150vh !important;
+  }
+  #about {
+    height: 200vh !important;
+  }
+  .about {
+    font-size: 3vw !important;
+  }
+  .contact {
+    font-size: 2vw;
+  }
+  #contact {
+    height: 150vh;
+  }
+  .input {
+    font-size: 2vw !important;
+  }
+  .submit {
+    font-size: 2vw !important;
+  }
+  .footer {
+    font-size: 2vw;
+  }
+  .icon {
+    -webkit-transition: .5s;
+    transition: .5s;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  .icon:hover {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  .orb, .orb2, .orb3, .orb4, .orb5, .orb6, .orb7, .orb8, .orb9, .orb10 {
+    -webkit-animation-duration: 70s;
+            animation-duration: 70s;
+  }
+}
+/*# sourceMappingURL=App.css.map */
