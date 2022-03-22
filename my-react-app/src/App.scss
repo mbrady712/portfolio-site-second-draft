@@ -13,7 +13,7 @@ body{
 .navitem{
     border-radius: 5%;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5vw;
+    font-size: 1em;
 }
 .navitem:hover{
     background-color: #53e3a752;
@@ -23,7 +23,7 @@ h1{
     font-family: 'Open Sans', sans-serif;
 }
 .portrait{
-    width: 25vw;
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -44,7 +44,6 @@ hr{
 }
 .caritem{
     font-family: 'Open Sans', sans-serif;
-    font-size: 4vw !important;
 }
 .caption{
     background-color: rgba(22, 91, 170, 0.5);
@@ -63,26 +62,25 @@ hr{
     background-color: rgba(255, 255, 255, 0.253);
 }
 .about{
-    font-size: 2vw;
+    font-size: 2em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
         
 /*CONTACT*/
-        
 .contact{
     background-color: rgba(255, 255, 255, 0.253);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 1.1em;
 }
 .input{
-    font-size: 2vw !important;
+    font-size: 1em !important;
 }
 .submit{
     margin-top: 5%;
     margin-left: 35%;
     width: 30%;
-    font-size: 1.25vw !important;
+    font-size: 1em !important;
     background-color: #165baa !important;
     transition: background-color 1s;
 }
@@ -94,7 +92,7 @@ hr{
         
 .footer{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.5vw;
+    font-size: 1.5em;
 }
 .icon{
     transition: .5s;
@@ -172,448 +170,163 @@ hr{
      
 /*RESPONSIVE STYLES*/
 
-/*
-Aspect ratio < 1 (Taller than it is wide):
-Group 1: .40-.50:
-Iphone XR
-Iphone 12 Pro
-Pixel 5
-Galaxy S8
-Galaxy S20 Ultra
-Galaxy Fold
-Galaxy A51/71
-Group 2:  .50-.60:
-Iphone SE
-Group 3: .60-.70: 
-Ipad Air
-Surface Pro
-Group 4: .70-.80:
-Ipad Mini
-Surface Duo
+/*RESPONSIVE STYLES*/
 
-Aspect ratio > 1 (Wider than it is tall):
-Group 1: 1.25-1.43: 
-Ipad Mini
-Surface Duo
-Group 2: 1.43-1.67: 
-Ipad Air
-Surface Pro
-Nest Hub Max
-Group 3: 1.67-2: 
-Iphone SE
-Nest Hub
-Group 4: 2-2.5:
-Iphone XR
-Iphone 12 Pro
-Pixel 5
-Galaxy S8
-Galaxy S20 Ultra
-Galaxy Fold
-Galaxy A51/71
-
-*/
-
-/*AR < 1 Group 1*/
-
-@media only screen and (min-aspect-ratio: 4/10) and (max-aspect-ratio: 5/10) {
+/*320px — 480px: Mobile devices*/
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    /*MULTIPLE SECTIONS*/
     h1{
-        font-size: 10vw !important;
+        font-size: 2em !important;
     }
-    .navitem{
-        font-size: 4vw;
-    }
+    /*HOME*/
     .navitem:hover{
         background-color: rgba(0,0,0,0);
     }
-    .portrait{
-        width: 45vw !important;
-    }
     .home{
-        height: 45vh !important;
+        height: 45vh;
+    }
+    .portrait{
+        width: 100px;
+    }
+    /*PROJECTS*/
+    .caritem{
+        font-size: 1em !important;
     }
     #projects{
-        height: 45vh !important;
+        height: auto;
     }
+    /*ABOUT*/
     #about{
-        height: auto !important;
+        height: auto;
     }
     .about{
-        font-size: 5vw !important;
+        font-size: 1em;
     }
+    /*CONTACT*/
     .contact{
-        font-size: 5vw;
+        font-size: 1em;
     }
-    .input{
-        font-size: 5vw !important;
+    .conthead{
+        margin-top: 5% !important;
     }
-    .submit{
-        font-size: 5vw !important;
-    }
+    /*FOOTER*/
     .footer{
-        font-size: 4vw !important;
-    }
-    .orb{
-        animation-duration: 100s;
+    font-size: 1em;
     }
 }
 
-/*AR < 1 Group 2*/
-
-@media only screen and (min-aspect-ratio: 5/10) and (max-aspect-ratio: 6/10) {
-    .navitem{
-        font-size: 4vw;
-    }
-    .navitem:hover{
-        background-color: rgba(0,0,0,0);
-    }
-    .portrait{
-        width: 30vw !important;
-    }
+/*481px — 768px: iPads, Tablets*/
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    /*MULTIPLE SECTIONS*/
     h1{
-        font-size: 7vw !important;
+        font-size: 2em !important;
     }
-    .home{
-        height: 40vh !important;
-    }
-    #projects{
-        height: 50vh !important;
-    }
-    .proj{
-        margin-top: 10%;
-        margin-bottom: 5%;
-    }
-    #about{
-        height: auto !important;
-    }
-    .about{
-        font-size: 5vw !important;
-    }
-    .contact{
-        font-size: 5vw;
-    }
-    .input{
-        font-size: 5vw !important;
-    }
-    .submit{
-        font-size: 5vw !important;
-    }
-    .footer{
-        font-size: 4vw !important;
-    }
-    .orb{
-        animation-duration: 100s;
-    }
-}
-
-/*AR < 1 Group 3*/
-
-@media only screen and (min-aspect-ratio: 6/10) and (max-aspect-ratio: 7/10) {
-    .navitem{
-        font-size: 3vw;
-    }
+    /*HOME*/
     .navitem:hover{
         background-color: rgba(0,0,0,0);
     }
     .portrait{
-        width: 40vw !important;
+        width: 150px;
     }
     .home{
-        height: 50vh !important;
+        height: auto;
+    }
+    /*PROJECTS*/
+    .caritem{
+        font-size: 1em !important;
     }
     #projects{
-        height: 50vh !important;
+        height: auto;
     }
-    #about{
-        height: 100vh !important;
-    }
+    /*ABOUT*/
     .about{
-        font-size: 4vw !important;
+        font-size: 1em;
     }
+    /*CONTACT*/
     .contact{
-        font-size: 5vw;
+        font-size: .9em;
     }
-    #contact{
-        height: 80vh;
+    .conthead{
+        margin-top: 0 !important;
     }
-    .input{
-        font-size: 4vw !important;
-    }
-    .submit{
-        font-size: 4vw !important;
-    }
+    /*FOOTER*/
     .footer{
-        font-size: 3vw;
+    font-size: .75em;
     }
-    .icon{
-        transition: .5s;
-        transform: scale(2);
-    }
-    .icon:hover{
-        transform: scale(3);
-    }
-    .orb{
-        animation-duration: 70s;
-      }
-
 }
 
-/*AR < 1 Group 4*/
-
-@media only screen and (min-aspect-ratio: 7/10) and (max-aspect-ratio: 8/10) {
-    .navitem{
-        font-size: 3vw;
-    }
-    .navitem:hover{
-        background-color: rgba(0,0,0,0);
-    }
-    .portrait{
-        width: 35vw !important;
-    }
-    .home{
-        height: 50vh !important;
-    }
+/*769px — 1024px: Small screens, laptops*/
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    /*MULTIPLE SECTIONS*/
     h1{
-        font-size: 7vw !important;
+        font-size: 2.5em !important;
     }
-    #projects{
-        height: 50vh !important;
-    }
-    #about{
-        height: 100vh !important;
-    }
-    .about{
-        font-size: 4vw !important;
-    }
-    .contact{
-        font-size: 4vw;
-    }
-    #contact{
-        height: 80vh;
-    }
-    .input{
-        font-size: 4vw !important;
-    }
-    .submit{
-        font-size: 4vw !important;
-    }
-    .footer{
-        font-size: 3vw;
-    }
-    .icon{
-        transition: .5s;
-        transform: scale(2);
-    }
-    .icon:hover{
-        transform: scale(3);
-    }
-    .orb{
-        animation-duration: 70s;
-      }
-}
-
-/*AR > 1 Group 1*/
-
-@media only screen and (min-aspect-ratio: 5/4) and (max-aspect-ratio: 143/100) {
-    .navitem:hover{
-        background-color: rgba(0,0,0,0);
-    }
-    .about{
-        font-size: 2.5vw;
-    }
-    .contact{
-        font-size: 3vw;
-    }
-    .input{
-        font-size: 3vw !important;
-    }
-    .submit{
-        font-size: 3vw !important;
-    }
-    .footer{
-        font-size: 2.5vw;
-    }
-}
-
-/*AR > 1 Group 2*/
-
-@media only screen and (min-aspect-ratio: 143/100) and (max-aspect-ratio: 167/100) {
-    .navitem:hover{
-        background-color: rgba(0,0,0,0);
-    }
-    .about{
-        font-size: 2.5vw;
-    }
-    .contact{
-        font-size: 3vw;
-    }
-    .input{
-        font-size: 3vw !important;
-    }
-    .submit{
-        font-size: 3vw !important;
-    }
-    .footer{
-        font-size: 2vw;
-    }
-}
-
-/*AR > 1 Group 3 Iphone SE only*/
-
-@media only screen and (min-aspect-ratio: 177/100) and (max-aspect-ratio: 2/1) {
-    .orb{
-        animation-duration: 70s;
-      }
-      .navitem{
-          font-size: 3vw;
-      }
-      .navitem:hover{
-        background-color: rgba(0,0,0,0);
-      }
-      .portrait{
-          width: 20vw !important;
-      }
-      h1{
-          font-size: 5vw !important;
-      }
-      .home{
-          height: 100vh !important;
-      }
-      #projects{
-          height: 125vh !important;
-      }
-      #about{
-          height: 200vh !important;
-      }
-      .about{
-          font-size: 3vw !important;
-      }
-      .contact{
-          font-size: 3vw;
-      }
-      #contact{
-          height: 150vh;
-      }
-      .input{
-          font-size: 3vw !important;
-      }
-      .submit{
-          font-size: 3vw !important;
-      }
-      .footer{
-          font-size: 2vw;
-      }
-      .icon{
-          transition: .5s;
-          transform: scale(2);
-      }
-      .icon:hover{
-          transform: scale(3);
-      }
-}
-
-/*AR > 1 Group 4 Galaxy S8 only */
-@media only screen and (min-aspect-ratio: 2/1) and (max-aspect-ratio: 209/100) {
-    .navitem{
-        font-size: 2.5vw;
+    /*HOME*/
+    .home{
+        height: auto;
     }
     .navitem:hover{
-      background-color: rgba(0,0,0,0);
+        background-color: rgba(0,0,0,0);
     }
     .portrait{
-        width: 20vw !important;
+        width: 200px;
     }
-    h1{
-        font-size: 4vw !important;
-    }
-    .home{
-        height: 100vh !important;
+    /*PROJECTS*/
+    .caritem{
+        font-size: 1em !important;
     }
     #projects{
-        height: 150vh !important;
+        height: auto;
+    }
+    /*ABOUT*/
+    .about{
+        font-size: 1em;
     }
     #about{
-        height: 200vh !important;
+        height: auto;
     }
-    .about{
-        font-size: 3vw !important;
-    }
+    /*CONTACT*/
     .contact{
-        font-size: 2vw;
+        font-size: .9em;
     }
-    #contact{
-        height: 150vh;
+    .conthead{
+        margin-top: 0 !important;
     }
-    .input{
-        font-size: 2vw !important;
-    }
-    .submit{
-        font-size: 2vw !important;
-    }
+    /*FOOTER*/
     .footer{
-        font-size: 2vw;
-    }
-    .icon{
-        transition: .5s;
-        transform: scale(2);
-    }
-    .icon:hover{
-        transform: scale(3);
-    }
-    .orb{
-      animation-duration: 70s;
+    font-size: .75em;
     }
 }
 
-/*AR > 1 Group 4 all others*/
-
-@media only screen and (min-aspect-ratio: 215/100) and (max-aspect-ratio: 5/2) {
-      .navitem{
-          font-size: 2.5vw;
-      }
-      .navitem:hover{
-        background-color: rgba(0,0,0,0);
-      }
-      .portrait{
-          width: 20vw !important;
-      }
-      h1{
-          font-size: 4vw !important;
-      }
-      .home{
-          height: 100vh !important;
-      }
-      #projects{
-          height: 150vh !important;
-      }
-      #about{
-          height: 200vh !important;
-      }
-      .about{
-          font-size: 3vw !important;
-      }
-      .contact{
-          font-size: 2vw;
-      }
-      #contact{
-          height: 150vh;
-      }
-      .input{
-          font-size: 2vw !important;
-      }
-      .submit{
-          font-size: 2vw !important;
-      }
-      .footer{
-          font-size: 2vw;
-      }
-      .icon{
-          transition: .5s;
-          transform: scale(2);
-      }
-      .icon:hover{
-          transform: scale(3);
-      }
-      .orb{
-        animation-duration: 70s;
-      }
+/*1025px — 1205px: Desktops, large screens*/
+@media only screen and (min-width: 1025px) and (max-width: 1205px){
+    /*MULTIPLE SECTIONS*/
+    h1{
+        font-size: 2.5em !important;
+    }
+    /*HOME*/
+    .portrait{
+        width: 300px;
+    }
+    /*PROJECTS*/
+    .caritem{
+        font-size: 1em !important;
+    }
+    /*ABOUT*/
+    .about{
+        font-size: 1.25em;
+    }
+    /*CONTACT*/
+    .contact{
+        font-size: .9em;
+    }
+    .conthead{
+        margin-top: 0 !important;
+    }
+    /*FOOTER*/
+    .footer{
+    font-size: .75em;
+    }
 }
+
+

@@ -94,7 +94,7 @@ function App() {
     <div class="home">
     <h1 class="top text-center mt-5 mb-5 display-1 dark text-light">Michael Brady</h1>
     <img src={portrait} className="portrait img-fluid rounded-circle d-flex"/>
-    <h1 class="top text-center mt-5 mb-5 display-2 dark text-light">Front-End Developer</h1>
+    <h1 class="top text-center mt-5 display-2 dark text-light">Front-End Developer</h1>
     </div>
     <hr id="prjline"></hr>
     
@@ -125,7 +125,7 @@ function App() {
         <Carousel.Caption className="p-5 mb-5">
           <div class="caption">
           <Anchor href="http://webtrain.austincc.edu/~mbrady/interactiondesign/COMPLETE/14-mars.html"
-          className="caritem display-1 text-decoration-none text-light">The Red Planet</Anchor>
+          className="caritem display-1 text-decoration-none text-light">Mars</Anchor>
           </div>
         </Carousel.Caption>
        </Carousel.Item>
@@ -218,7 +218,7 @@ function App() {
 
     {/*CONTACT*/}
     <div id="contact">
-    <h1 class="text-center mt-5 mb-5 text-light display-1">Contact</h1>
+    <h1 class="conthead text-center text-light display-1">Contact</h1>
     <div class="container-fluid contact col-lg-6 p-4 rounded">
     <Form class="col-md-12" noValidate validated={validated} onSubmit={handleSubmit} ref={formRef}>
         <Form.Group controlId="name">
@@ -280,6 +280,7 @@ function App() {
       &copy; Michael Brady 2022
       </div>
     </div>
+    
 
       {/*ANIMATIONS*/}
       <div class="wrapper">
