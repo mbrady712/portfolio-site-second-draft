@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.test {
+  position: absolute;
+  z-index: 99;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -52,17 +57,18 @@ hr {
 
 .caritem {
   font-family: 'Open Sans', sans-serif;
+  font-size: 3em !important;
 }
 
 .caption {
-  background-color: rgba(22, 91, 170, 0.5);
-  border-radius: 5%;
+  background-color: rgba(22, 91, 170, 0.9);
+  border-radius: 5px;
   -webkit-transition: background-color 1s;
   transition: background-color 1s;
 }
 
 .caption:hover {
-  background-color: rgba(83, 227, 166, 0.5);
+  background-color: rgba(83, 227, 166, 0.9);
 }
 
 /*ABOUT*/
@@ -80,6 +86,11 @@ hr {
 }
 
 /*CONTACT*/
+.conthead {
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
 .contact {
   background-color: rgba(255, 255, 255, 0.253);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -108,7 +119,7 @@ hr {
 /*FOOTER*/
 .footer {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .icon {
@@ -121,6 +132,12 @@ hr {
 .icon:hover {
   -webkit-transform: scale(3);
           transform: scale(3);
+}
+
+.phone:hover {
+  color: white !important;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 /*ANIMATIONS*/
@@ -143,55 +160,55 @@ hr {
           animation-iteration-count: infinite;
   position: relative;
   margin-top: -10vw;
-  -webkit-animation-delay: 26035ms;
-          animation-delay: 26035ms;
+  -webkit-animation-delay: 4356ms;
+          animation-delay: 4356ms;
   z-index: -1;
   opacity: 0;
 }
 
 .orb2 {
-  -webkit-animation-delay: 10069ms;
-          animation-delay: 10069ms;
+  -webkit-animation-delay: 21349ms;
+          animation-delay: 21349ms;
 }
 
 .orb3 {
-  -webkit-animation-delay: 1396ms;
-          animation-delay: 1396ms;
+  -webkit-animation-delay: 23540ms;
+          animation-delay: 23540ms;
 }
 
 .orb4 {
-  -webkit-animation-delay: 26650ms;
-          animation-delay: 26650ms;
+  -webkit-animation-delay: 19330ms;
+          animation-delay: 19330ms;
 }
 
 .orb5 {
-  -webkit-animation-delay: 4820ms;
-          animation-delay: 4820ms;
+  -webkit-animation-delay: 5575ms;
+          animation-delay: 5575ms;
 }
 
 .orb6 {
-  -webkit-animation-delay: 13860ms;
-          animation-delay: 13860ms;
+  -webkit-animation-delay: 17770ms;
+          animation-delay: 17770ms;
 }
 
 .orb7 {
-  -webkit-animation-delay: 8456ms;
-          animation-delay: 8456ms;
+  -webkit-animation-delay: 6922ms;
+          animation-delay: 6922ms;
 }
 
 .orb8 {
-  -webkit-animation-delay: 29522ms;
-          animation-delay: 29522ms;
+  -webkit-animation-delay: 9469ms;
+          animation-delay: 9469ms;
 }
 
 .orb9 {
-  -webkit-animation-delay: 2620ms;
-          animation-delay: 2620ms;
+  -webkit-animation-delay: 8198ms;
+          animation-delay: 8198ms;
 }
 
 .orb10 {
-  -webkit-animation-delay: 18388ms;
-          animation-delay: 18388ms;
+  -webkit-animation-delay: 7716ms;
+          animation-delay: 7716ms;
 }
 
 @-webkit-keyframes orb {
@@ -258,6 +275,7 @@ hr {
   }
   .conthead {
     margin-top: 5% !important;
+    margin-bottom: 0 !important;
   }
   /*FOOTER*/
   .footer {
@@ -298,6 +316,7 @@ hr {
   }
   .conthead {
     margin-top: 0 !important;
+    margin-bottom: 0 !important;
   }
   /*FOOTER*/
   .footer {
@@ -341,6 +360,7 @@ hr {
   }
   .conthead {
     margin-top: 0 !important;
+    margin-bottom: 0 !important;
   }
   /*FOOTER*/
   .footer {
@@ -372,6 +392,7 @@ hr {
   }
   .conthead {
     margin-top: 0 !important;
+    margin-bottom: 0 !important;
   }
   /*FOOTER*/
   .footer {

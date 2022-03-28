@@ -1,3 +1,7 @@
+.test{
+    position: absolute;
+    z-index: 99;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -44,14 +48,15 @@ hr{
 }
 .caritem{
     font-family: 'Open Sans', sans-serif;
+    font-size: 3em !important;
 }
 .caption{
-    background-color: rgba(22, 91, 170, 0.5);
-    border-radius: 5%;
+    background-color: rgba(22, 91, 170, 0.9);
+    border-radius: 5px;
     transition: background-color 1s;
 }
 .caption:hover{
-    background-color: rgba(83, 227, 166, 0.5);
+    background-color: rgba(83, 227, 166, 0.9);
 }
         
 /*ABOUT*/
@@ -67,6 +72,10 @@ hr{
 }
         
 /*CONTACT*/
+.conthead{
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
 .contact{
     background-color: rgba(255, 255, 255, 0.253);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -92,7 +101,7 @@ hr{
         
 .footer{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 .icon{
     transition: .5s;
@@ -100,6 +109,10 @@ hr{
 }
 .icon:hover{
     transform: scale(3);
+}
+.phone:hover{
+    color: white !important;
+    transition: .5s;
 }
         
 /*ANIMATIONS*/
@@ -208,6 +221,7 @@ hr{
     }
     .conthead{
         margin-top: 5% !important;
+        margin-bottom: 0 !important;
     }
     /*FOOTER*/
     .footer{
@@ -248,6 +262,7 @@ hr{
     }
     .conthead{
         margin-top: 0 !important;
+        margin-bottom: 0 !important;
     }
     /*FOOTER*/
     .footer{
@@ -291,6 +306,7 @@ hr{
     }
     .conthead{
         margin-top: 0 !important;
+        margin-bottom: 0 !important;
     }
     /*FOOTER*/
     .footer{
@@ -322,6 +338,7 @@ hr{
     }
     .conthead{
         margin-top: 0 !important;
+        margin-bottom: 0 !important;
     }
     /*FOOTER*/
     .footer{

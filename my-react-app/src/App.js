@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import React, {useRef , useState} from "react";
 import portrait from './images/portrait.jpg';
 import georgia from './images/pianowithgeorgia.png';
+import georgia1 from './images/georgia1.png';
 import beach from './images/beach.png';
 import schubert from './images/schubert.png';
 import portfolio from './images/portfolio.png';
@@ -25,17 +26,14 @@ console.log(portrait);
 function App() {
   /*FORM VALIDATION AND SEND DATA TO EMAIL*/
 
-  /*initialize form data*/
   const initialFormData = Object.freeze({
     name: "",
     email: "",
     message: ""
   });
 
-  /*store form data in state*/
   const [formData, updateFormData] = React.useState(initialFormData);
 
-  /*update form data*/
   const handleChange = (e) => {
     updateFormData({
       ...formData,
@@ -72,6 +70,20 @@ function App() {
       setValidated(false);
     }
   };
+  /*EMAIL OBFUSCATION*/
+  const a = "mailto:";
+  const b = "michaelbrady712";
+  const c = "@";
+  const d = "gmail.com";
+  const e = a + b + c + d;
+
+  /*PHONE OBFUSCATION*/
+  const f = "410";
+  const g = "608";
+  const h = "8071";
+  const i = "tel:";
+  const j = f + g + h;
+  const k = i + f + g + h;
 
   return (
     <>
@@ -93,7 +105,7 @@ function App() {
      {/*HOME*/} 
     <div class="home">
     <h1 class="top text-center mt-5 mb-5 display-1 dark text-light">Michael Brady</h1>
-    <img src={portrait} className="portrait img-fluid rounded-circle d-flex"/>
+    <img src={portrait} className="portrait img-fluid rounded-circle d-flex" alt="portrait"/>
     <h1 class="top text-center mt-5 display-2 dark text-light">Front-End Developer</h1>
     </div>
     <hr id="prjline"></hr>
@@ -111,7 +123,7 @@ function App() {
         />
         <Carousel.Caption className="p-5 mb-5">
           <div class="caption">
-          <Anchor href="http://webtrain.austincc.edu/~mbrady/capstone/seconddraft/index.php"
+          <Anchor href="https://pianowithgeorgia.com"
           className="caritem display-1 text-decoration-none text-light">Piano With Georgia</Anchor>
           </div>
         </Carousel.Caption>
@@ -165,6 +177,19 @@ function App() {
           <div class="caption">
           <Anchor href="http://webtrain.austincc.edu/~mbrady/portfoliosite/firstdraft/"
           className="caritem display-1 text-decoration-none text-light">Portfolio First Draft</Anchor>
+          </div>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={georgia1}
+          alt="Third slide"
+        />
+        <Carousel.Caption className="p-5 mb-5">
+          <div class="caption">
+          <Anchor href="http://webtrain.austincc.edu/~mbrady/capstone/seconddraft/index.php"
+          className="caritem display-1 text-decoration-none text-light">Capstone First Draft</Anchor>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -270,11 +295,12 @@ function App() {
     <div class="footer container-fluid border-top border-5 border-dark mt-5 rounded-circle p-3">
       <div class="container d-flex justify-content-center p-3">
       <Anchor className="text-decoration-none text-dark" href='https://www.linkedin.com/in/michael-brady-91777a21a/'><FaLinkedin class="icon mx-4"/></Anchor>
-      <Anchor className="text-decoration-none text-dark" href='mailto:michaelbrady712@gmail.com'><FaEnvelope class="icon mx-4"/></Anchor>
-      <Anchor className="text-decoration-none text-dark" href='https://github.com/mbrady712'><FaGithub class="icon mx-4"/></Anchor>
+      <Anchor className="text-decoration-none text-dark" id="email" href={e}> 
+      <FaEnvelope class="icon mx-4"/> </Anchor>
+      <Anchor className="text-decoration-none text-dark" href="https://github.com/mbrady712"><FaGithub class="icon mx-4"/></Anchor>
       </div>
       <div class="container d-flex justify-content-center">
-      <FaPhoneAlt/> 410-608-8071
+      <Anchor className="text-dark phone" href={k}><FaPhoneAlt/>{j}</Anchor>
       </div>
       <div class="container d-flex justify-content-center"> 
       &copy; Michael Brady 2022
@@ -300,3 +326,4 @@ function App() {
 }
 
 export default App;
+
